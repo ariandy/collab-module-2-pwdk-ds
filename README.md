@@ -2,7 +2,12 @@
 
 Task 1
 - Pecahkan data fetcher jadi beberapa fungsi
-- Rapikan dokumentasi Jupyter
 - Hlangkan beberapa duplikasi kolom (pindahkan datanya menjadi 1 kolom)
-- Isi setiap missing values
+- Isi setiap missing values yang masih tersisa
 - Pastikan data sudah clean
+
+Task 2
+- Rapikan dokumentasi Jupyter
+
+Task 3
+- Buat analisa tentang data yang sudah dibersihkan
