@@ -1,2 +1,2 @@
-raw-data.csv
-.ipynb_checkpoints
+datasets/
+.ipynb_checkpoints/
