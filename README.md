@@ -12,10 +12,10 @@ Primary Task:
 - Pecahkan beberapa prosedur yang kompleks (misal, data fetcher, regex matcher, dll) menjadi beberapa fungsi. Danjadikan fungsi tersebut modular. ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy")
 - Lakukan QA pada data. Pastikan data sudah clean ![alt text](https://img.shields.io/badge/Firdaus-Done-green.svg "Done by Firdaus")
 - Rapikan dokumentasi Jupyter dan juga GitHub ![alt text](https://img.shields.io/badge/On_Going-orange.svg "On Going")
-- Buat analisa dan visualisasi tentang data yang sudah dibersihkan ![alt text](https://img.shields.io/badge/On_Going-orange.svg "Ongoing") ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "On Going")
+- Buat analisa dan visualisasi tentang data yang sudah dibersihkan ![alt text](https://img.shields.io/badge/On_Going-orange.svg "On Going")
 
 Secondary Task:
-- Buat logging process untuk setiap process yang cukup memakan waktu yang kurang lebihnya memerlukan 10 detik
+- Buat logging process untuk setiap process yang cukup memakan waktu yang kurang lebihnya memerlukan 10 detik ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy")
 
 Extra Task (semisal masih ada waktu):
 - Buat unit test untuk beberapa fungsi yang kompleks.
