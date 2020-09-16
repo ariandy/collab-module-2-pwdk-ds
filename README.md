@@ -15,10 +15,10 @@ Primary Task:
 - Buat analisa dan visualisasi tentang data yang sudah dibersihkan ![alt text](https://img.shields.io/badge/On_Going-orange.svg "On Going")
 
 Secondary Task:
-- Buat logging process untuk setiap process yang cukup memakan waktu yang kurang lebihnya memerlukan 10 detik ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy")
+- Buat logging process untuk setiap process yang cukup memakan waktu yang kurang lebihnya memerlukan 10 detik. ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy")
 
 Extra Task (semisal masih ada waktu):
 - Buat unit test untuk beberapa fungsi yang kompleks.
 - Convert dataframe ke time series
-- Memproses [archive data](https://github.com/CSSEGISandData/COVID-19/tree/master/archived_data) agar menjadi sesuai dengan dashboard Johns-Hopkins
-- Buat dashboard sederhana
+- Memproses [archive data](https://github.com/CSSEGISandData/COVID-19/tree/master/archived_data) agar menjadi sesuai dengan dashboard Johns-Hopkins.
+- Buat dashboard sederhana.
