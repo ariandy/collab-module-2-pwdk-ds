@@ -3,7 +3,7 @@
 ### Disclaimer
 
 Data Source ini adalah hasil fetch dari [kumpulan csv pada link berikut](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports).
-Oleh karenanya, data yang difetch dimulai dari tanggal Feb-22 s/d Hari ini. Sementara data dari Jan-21 s/d Feb-14 yang tersedia pada [archive data](https://github.com/CSSEGISandData/COVID-19/tree/master/archived_data) tidak diikut sertakan. Ini sebabnya, ada beberapa angka yang tidak sama (entah kurang lebih, ataupun meleset jauh) dengan yang ada pada dashboard Johns-Hopkins.
+Oleh karenanya, data yang difetch dimulai dari tanggal Feb-22 s/d Hari ini. Sementara data dari Jan-21 s/d Feb-14 yang tersedia pada [archive data](https://github.com/CSSEGISandData/COVID-19/tree/master/archived_data) tidak diikutsertakan. Ini sebabnya, ada beberapa angka yang tidak sama (entah selisih sedikit, ataupun meleset jauh) dengan yang ada pada dashboard Johns-Hopkins.
 
 ### Team
 - M. Ariandy Noviar untuk task Software Engineering dan Data Wrangler
