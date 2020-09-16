@@ -22,7 +22,7 @@ Secondary:
 - Backup dan maintaining Conda env. ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy")
 - Buat logging untuk setiap fungsi/proses yang cukup memakan waktu yang kurang lebihnya memerlukan 10 detik. ![alt text](https://img.shields.io/badge/On_Going-orange.svg "On Going")
 
-Extra (semisal masih ada waktu):
+Tertiary (semisal masih ada waktu):
 - Buat unit test untuk beberapa fungsi yang kompleks.
 - Convert dataframe ke beberapa time series.
 - Memproses [archive data](https://github.com/CSSEGISandData/COVID-19/tree/master/archived_data) agar menjadi sesuai dengan dashboard Johns-Hopkins.
