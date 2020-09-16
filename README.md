@@ -12,7 +12,7 @@ Oleh karenanya, data yang difetch dimulai dari tanggal Feb-22 s/d Hari ini. Seme
 ### Task
 Primary:
 - ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy") Lakukan pembagian notebook menjadi beberapa stage berdasarkan lama komputasi. Per stage, bagi menjadi beberapa step kecil dan checkpoint.
-- ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy") Pecahkan beberapa prosedur yang kompleks (misal, data fetcher, regex matcher, dll) menjadi beberapa fungsi. Danjadikan fungsi tersebut modular.
+- ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy") Pecahkan beberapa prosedur yang kompleks (misal, data fetcher, regex matcher, dll) menjadi beberapa fungsi. Dan jadikan fungsi tersebut modular.
 - ![alt text](https://img.shields.io/badge/Firdaus-Done-green.svg "Done by Firdaus") Lakukan QA pada data. Pastikan data sudah cukup bersih untuk diproses ke tahapan selanjutnya.
 - ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy") Buat DataFrame yang merupakan akumulasi dari kolom 'Confirmed', 'Active', 'Deaths', 'Recovered', untuk setiap negara berdasarkan datetime.now()
 - ![alt text](https://img.shields.io/badge/On_Going-orange.svg "On Going") Rapikan dokumentasi Jupyter dan juga GitHub
