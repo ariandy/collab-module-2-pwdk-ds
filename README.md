@@ -15,6 +15,7 @@ Primary Task:
 - Buat analisa dan visualisasi tentang data yang sudah dibersihkan ![alt text](https://img.shields.io/badge/On_Going-orange.svg "On Going")
 
 Secondary Task:
+- Backup dan maintaining Conda env. ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy")
 - Buat logging process untuk setiap process yang cukup memakan waktu yang kurang lebihnya memerlukan 10 detik. ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy")
 
 Extra Task (semisal masih ada waktu):
@@ -22,3 +23,4 @@ Extra Task (semisal masih ada waktu):
 - Convert dataframe ke time series
 - Memproses [archive data](https://github.com/CSSEGISandData/COVID-19/tree/master/archived_data) agar menjadi sesuai dengan dashboard Johns-Hopkins.
 - Buat dashboard sederhana.
+- Membuat satu script utuh sebagai pipeline yang meproses semua data mentah menjadi sebuah dataframe yang cukup bersih untuk dianalisa.
