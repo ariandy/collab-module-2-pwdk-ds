@@ -11,16 +11,16 @@ Oleh karenanya, data yang difetch dimulai dari tanggal Feb-22 s/d Hari ini. Seme
 
 ### Task
 Primary:
-- Lakukan pembagian notebook menjadi beberapa stage berdasarkan lama komputasi. Per stage, bagi menjadi beberapa step kecil dan checkpoint. ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy")
-- Pecahkan beberapa prosedur yang kompleks (misal, data fetcher, regex matcher, dll) menjadi beberapa fungsi. Danjadikan fungsi tersebut modular. ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy")
-- Lakukan QA pada data. Pastikan data sudah cukup bersih untuk diproses ke tahapan selanjutnya. ![alt text](https://img.shields.io/badge/Firdaus-Done-green.svg "Done by Firdaus")
-- Buat DataFrame yang merupakan akumulasi dari kolom 'Confirmed', 'Active', 'Deaths', 'Recovered', untuk setiap negara berdasarkan datetime.now() ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy")
-- Rapikan dokumentasi Jupyter dan juga GitHub ![alt text](https://img.shields.io/badge/On_Going-orange.svg "On Going")
-- Buat analisa dan visualisasi tentang data yang sudah dibersihkan ![alt text](https://img.shields.io/badge/On_Going-orange.svg "On Going")
+- ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy") Lakukan pembagian notebook menjadi beberapa stage berdasarkan lama komputasi. Per stage, bagi menjadi beberapa step kecil dan checkpoint.
+- ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy") Pecahkan beberapa prosedur yang kompleks (misal, data fetcher, regex matcher, dll) menjadi beberapa fungsi. Danjadikan fungsi tersebut modular.
+- ![alt text](https://img.shields.io/badge/Firdaus-Done-green.svg "Done by Firdaus") Lakukan QA pada data. Pastikan data sudah cukup bersih untuk diproses ke tahapan selanjutnya.
+- ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy") Buat DataFrame yang merupakan akumulasi dari kolom 'Confirmed', 'Active', 'Deaths', 'Recovered', untuk setiap negara berdasarkan datetime.now()
+- ![alt text](https://img.shields.io/badge/On_Going-orange.svg "On Going") Rapikan dokumentasi Jupyter dan juga GitHub
+- ![alt text](https://img.shields.io/badge/On_Going-orange.svg "On Going") Buat analisa dan visualisasi tentang data yang sudah dibersihkan
 
 Secondary:
-- Backup dan maintaining Conda env. ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy")
-- Buat logging untuk setiap fungsi/proses yang cukup memakan waktu yang kurang lebihnya memerlukan 10 detik. ![alt text](https://img.shields.io/badge/On_Going-orange.svg "On Going")
+- ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy") Backup dan maintaining Conda env.
+- ![alt text](https://img.shields.io/badge/On_Going-orange.svg "On Going") Buat logging untuk setiap fungsi/proses yang cukup memakan waktu yang kurang lebihnya memerlukan 10 detik.
 
 Tertiary (semisal masih ada waktu):
 - Buat unit test untuk beberapa fungsi yang kompleks.
