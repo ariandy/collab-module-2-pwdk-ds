@@ -24,7 +24,7 @@ Secondary:
 
 Tertiary (semisal masih ada waktu):
 - Buat unit test untuk beberapa fungsi yang kompleks.
-- Convert dataframe ke beberapa time series.
+- Convert dataframe ke beberapa time series ('Confirmed', 'Active', 'Deaths', 'Recovered').
 - Memproses [archive data](https://github.com/CSSEGISandData/COVID-19/tree/master/archived_data) agar menjadi sesuai dengan dashboard Johns-Hopkins.
 - Buat dashboard sederhana.
 - Membuat satu script utuh sebagai pipeline yang memproses semua data mentah menjadi sebuah dataframe yang cukup bersih untuk dianalisa.
