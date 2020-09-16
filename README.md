@@ -10,7 +10,7 @@ Partner : Firdaus
 Primary Task:
 - Lakukan pembagian notebook menjadi beberapa stage berdasarkan lama komputasi. Per stage, bagi menjadi beberapa step kecil dan checkpoint. ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy")
 - Pecahkan beberapa prosedur yang kompleks (misal, data fetcher, regex matcher, dll) menjadi beberapa fungsi. Danjadikan fungsi tersebut modular. ![alt text](https://img.shields.io/badge/Ariandy-Done-green.svg "Done by Ariandy")
-- Lakukan QA pada data. Pastikan data sudah clean ![alt text](https://img.shields.io/badge/Firdaus-Done-green.svg "Done by Firdaus")
+- Lakukan QA pada data. Pastikan data sudah cukup bersih untuk diproses ke tahapan selanjutnya. ![alt text](https://img.shields.io/badge/Firdaus-Done-green.svg "Done by Firdaus")
 - Rapikan dokumentasi Jupyter dan juga GitHub ![alt text](https://img.shields.io/badge/On_Going-orange.svg "On Going")
 - Buat analisa dan visualisasi tentang data yang sudah dibersihkan ![alt text](https://img.shields.io/badge/On_Going-orange.svg "On Going")
 
