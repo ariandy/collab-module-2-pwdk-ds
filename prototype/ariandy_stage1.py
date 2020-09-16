@@ -1,54 +1,65 @@
-import re
+import numpy as np
+import pandas as pd
 
-# Hitung banyak tanggal dengan format tertentu
-# Jika ditemukan tanggal dengan format seperti X, maka nilai 'N' pada 'lu_temp' diubah ke 'Y' 
-def pattern_checker(data, pattern):
-    for i in range(len(data)):
-        get_loc_lastUpdate = data.columns.get_loc('Last_Update')
-        date_txt = data.iat[i, get_loc_lastUpdate]
-        result = re.match(pattern, date_txt)
-        if result != None:
-            get_loc_lu_temp = data.columns.get_loc('lu_temp')
-            data.iat[i, get_loc_lu_temp] = 'Y'
+def column_deleter(dataframe, column):
+    if column in dataframe:
+        dataframe.drop(column, axis=1, inplace=True)
+    return dataframe
 
-def pattern_checker_report(data, pattern):
-    pattern_checker(data, pattern)
-    print([len(data[data['lu_temp']=='Y']), len(data) == len(data[data['lu_temp']=='Y'])])
+def column_extractor(dataframe, *columns):
+    for i in range(len(columns)):
+        column_deleter(dataframe, columns[i])
+    return dataframe
 
-def convert_a(x):
-    x = x.split(' ')
-    x[0] = x[0].split('/')
-    if int(x[0][0]) < 10:
-        x[0][0] = '0'+x[0][0]
-    else:
-        pass
-    if int(x[0][1]) < 10:
-        x[0][1] = '0'+x[0][1]
-    else:
-        pass
-    if int(x[0][2]) < 2000:
-        x[0][2] = '20'+x[0][2]
-    else:
-        pass
-    x[0][0], x[0][2] = x[0][2], x[0][0]
-    x[0][1], x[0][2] = x[0][2], x[0][1]
-    x[0] = '-'.join(x[0])
-    x[1] = x[1].split(':')
-    if int(x[1][0]) < 10:
-        x[1][0] = '0'+x[0][1]
-    else:
-        pass
-    x[1] = ':'.join(x[1])
-    x[1] += ':00'
-    return ' '.join(x)
+def remove_zero_and_duplicated_null_on_latlong(df, lat_column, long_column):
+    df = df[~df[lat_column].isna() & ~df[long_column].isna()].drop_duplicates()
+    return df[(df[lat_column] != 0) & (df[long_column] != 0)].reset_index(drop=True)    
 
-def convert_c(x):
-    return ' '.join(x.split('T'))
+def temp_col_for_latlong_manipulation(
+    df, combined, province_state, country_region,
+    lat_mean='lat_mean', long_mean='long_mean'):
+    df[combined] = df[province_state] + ', ' + df[country_region]
+    df[lat_mean] = 0.0
+    df[long_mean] = 0.0
+    return df
 
-def higher_order_converter(df, pattern, convert_func):
-    df['lu_temp'] = 'N'
-    pattern_checker(df, pattern)
-    x = df[df['lu_temp']=='Y'].index
-    get_loc_lu = df.columns.get_loc('Last_Update')
-    for i in x:
-        df.iat[i, get_loc_lu] = convert_func(df.iat[i, get_loc_lu])
+def region_squeezer(df, combined, province_state, country_region):
+    df = temp_col_for_latlong_manipulation(df, combined, province_state, country_region)
+    for i in range(len(df)):
+        x = df[df[combined] == df.iloc[i,4]].mean()
+        df.iloc[i,5] = x.values[0]
+        df.iloc[i,6] = x.values[1]
+    df.Lat = df.lat_mean
+    df.Long_ = df.long_mean
+    df = column_extractor(df, 'lat_mean', 'long_mean', 'combined')
+    return df.drop_duplicates().reset_index(drop=True)
+
+def latlong_filler(df, ref):
+    for i in range(len(ref)):
+        null_catcher = ((df['Lat'].isnull()) & (df['Long_'].isnull()))
+        zero_catcher = ((df['Lat']==0.0) & (df['Long_']==0.0))
+        x = df[null_catcher | zero_catcher].index
+        for j in x:
+            cond_a = (np.isnan(df.iat[j, 4])) and (np.isnan(df.iat[j, 5]))
+            cond_b = (df.iat[j, 4]==0.0) and (df.iat[j, 5]==0.0)
+            if (df.iat[j, 12]==ref.iat[i, 4]):
+                if cond_a or cond_b:
+                    df.iat[j, 4] = ref.iat[i, 2]
+                    df.iat[j, 5] = ref.iat[i, 3]
+                print(j)
+        print('------------> '+ str(i)+'/'+str(len(ref)-1)+' '+ref.iat[i, 4])
+    print('Finish')
+    return df
+
+def latlong_filler_all_mean(df, ref):
+    for i in range(len(ref)):
+        x = df[df['Combined']==ref.iat[i,4]].index
+        combined_get_loc = df.columns.get_loc('Combined')
+        for j in x:
+            if (df.iat[j, combined_get_loc]==ref.iat[i, 4]):
+                df.iat[j, 4] = ref.iat[i, 2]
+                df.iat[j, 5] = ref.iat[i, 3]
+                print(j)
+        print('------------> '+ str(i)+'/'+str(len(ref)-1)+' '+ref.iat[i, 4])
+    print('Finish')
+    return df

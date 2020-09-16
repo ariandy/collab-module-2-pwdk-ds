@@ -1,5 +1,7 @@
 import os
+import re
 import wget
+import requests
 from datetime import datetime, timedelta, date
 
 def found_or_make_directory(directory_name):
@@ -16,8 +18,13 @@ def fetcher(url, today, x='01-22-2020'):
         if os.path.isfile(x+'.csv'):
             pass
         else:
-            wget.download(url+x+'.csv', x+'.csv')
-            print(' -> Sukses unduh '+x+'.csv')
+            req = requests.get(url+x+'.csv')
+            if req.status_code == 200:
+                wget.download(url+x+'.csv', x+'.csv')
+                print(' -> Sukses unduh '+x+'.csv')
+            else:
+                print('Pada waktu UTC, sekarang adalah pukul ' + str(datetime.utcnow())[11:16])
+                print('File pada hari ini (waktu UTC) akan di upload di antara jam 04:45 dan 05:15 GMT')
         x = (datetime.strptime(x, '%m-%d-%Y') + timedelta(days=1)).strftime('%m-%d-%Y')
     print('Fetching selesai !')
 
@@ -55,3 +62,56 @@ def column_eliminator(df, redundant_column, kept_column):
             print(redundant_column+' dihapus\n')
     else:
         print(redundant_column+' sudah dihapus sebelumnya')
+
+# Hitung banyak tanggal dengan format tertentu
+# Jika ditemukan tanggal dengan format seperti X, maka nilai 'N' pada 'lu_temp' diubah ke 'Y' 
+def pattern_checker(data, pattern):
+    for i in range(len(data)):
+        get_loc_lastUpdate = data.columns.get_loc('Last_Update')
+        date_txt = data.iat[i, get_loc_lastUpdate]
+        result = re.match(pattern, date_txt)
+        if result != None:
+            get_loc_lu_temp = data.columns.get_loc('lu_temp')
+            data.iat[i, get_loc_lu_temp] = 'Y'
+
+def pattern_checker_report(data, pattern):
+    pattern_checker(data, pattern)
+    print([len(data[data['lu_temp']=='Y']), len(data) == len(data[data['lu_temp']=='Y'])])
+
+def convert_a(x):
+    x = x.split(' ')
+    x[0] = x[0].split('/')
+    if int(x[0][0]) < 10:
+        x[0][0] = '0'+x[0][0]
+    else:
+        pass
+    if int(x[0][1]) < 10:
+        x[0][1] = '0'+x[0][1]
+    else:
+        pass
+    if int(x[0][2]) < 2000:
+        x[0][2] = '20'+x[0][2]
+    else:
+        pass
+    x[0][0], x[0][2] = x[0][2], x[0][0]
+    x[0][1], x[0][2] = x[0][2], x[0][1]
+    x[0] = '-'.join(x[0])
+    x[1] = x[1].split(':')
+    if int(x[1][0]) < 10:
+        x[1][0] = '0'+x[0][1]
+    else:
+        pass
+    x[1] = ':'.join(x[1])
+    x[1] += ':00'
+    return ' '.join(x)
+
+def convert_c(x):
+    return ' '.join(x.split('T'))
+
+def higher_order_converter(df, pattern, convert_func):
+    df['lu_temp'] = 'N'
+    pattern_checker(df, pattern)
+    x = df[df['lu_temp']=='Y'].index
+    get_loc_lu = df.columns.get_loc('Last_Update')
+    for i in x:
+        df.iat[i, get_loc_lu] = convert_func(df.iat[i, get_loc_lu])
