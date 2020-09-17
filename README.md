@@ -21,7 +21,7 @@ Primary:
 
 Secondary:
 - ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done by Ariandy") Backup dan maintaining Conda env.
-- ![alt text](https://img.shields.io/badge/On_Going-orange.svg "On Going") Buat logging untuk setiap fungsi/proses yang cukup memakan waktu yang kurang lebihnya memerlukan 10 detik.
+- ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done by Ariandy") Buat logging untuk setiap fungsi/proses yang cukup memakan waktu yang kurang lebihnya memerlukan 10 detik.
 
 Tertiary (semisal masih ada waktu):
 - Buat unit test untuk beberapa fungsi yang kompleks.
