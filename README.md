@@ -16,8 +16,8 @@ Primary:
 - ![alt text](https://img.shields.io/badge/DQA-Done-green.svg "Done") Lakukan QA pada data. Pastikan data sudah cukup bersih untuk diproses ke tahapan selanjutnya.
 - ![alt text](https://img.shields.io/badge/DP-Done-green.svg "Done") Buat DataFrame yang merupakan akumulasi dari kolom 'Confirmed', 'Active', 'Deaths', 'Recovered', untuk setiap negara berdasarkan datetime.now()
 - ![alt text](https://img.shields.io/badge/DOC-On_Going-orange.svg "On Going") Rapikan dokumentasi Jupyter dan juga GitHub
-- ![alt text](https://img.shields.io/badge/AN-On_Going-orange.svg "On Going") Buat analisa tentang data yang sudah dibersihkan
-- ![alt text](https://img.shields.io/badge/VIZ-On_Going-orange.svg "On Going") Buat visualisasi tentang data yang sudah dibersihkan
+- ![alt text](https://img.shields.io/badge/AN-Done-green.svg "On Going") Buat analisa tentang data yang sudah dibersihkan
+- ![alt text](https://img.shields.io/badge/VIZ-On_Going-orange.svg "Done") Buat visualisasi tentang data yang sudah dibersihkan
 
 Secondary:
 - ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done") Backup dan maintaining Conda env.
