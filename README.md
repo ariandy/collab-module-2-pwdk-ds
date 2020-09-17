@@ -11,18 +11,18 @@ Oleh karenanya, data yang difetch dimulai dari tanggal Feb-22 s/d Hari ini. Seme
 
 ### Task
 Primary:
-- ![alt text](https://img.shields.io/badge/DW-Done-green.svg "Done by Ariandy") Lakukan pembagian notebook menjadi beberapa stage berdasarkan lama komputasi. Per stage, bagi menjadi beberapa step kecil dan checkpoint.
-- ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done by Ariandy") Pecahkan beberapa prosedur yang kompleks (misal, data fetcher, regex matcher, dll) menjadi beberapa fungsi. Dan jadikan fungsi tersebut modular.
-- ![alt text](https://img.shields.io/badge/QA-Done-green.svg "Done by Firdaus") Lakukan QA pada data. Pastikan data sudah cukup bersih untuk diproses ke tahapan selanjutnya.
-- ![alt text](https://img.shields.io/badge/DW-Done-green.svg "Done by Ariandy") Buat DataFrame yang merupakan akumulasi dari kolom 'Confirmed', 'Active', 'Deaths', 'Recovered', untuk setiap negara berdasarkan datetime.now()
+- ![alt text](https://img.shields.io/badge/DW-Done-green.svg "Done") Lakukan pembagian notebook menjadi beberapa stage berdasarkan lama komputasi. Per stage, bagi menjadi beberapa step kecil dan checkpoint.
+- ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done") Pecahkan beberapa prosedur yang kompleks (misal, data fetcher, regex matcher, dll) menjadi beberapa fungsi. Dan jadikan fungsi tersebut modular.
+- ![alt text](https://img.shields.io/badge/QA-Done-green.svg "Done") Lakukan QA pada data. Pastikan data sudah cukup bersih untuk diproses ke tahapan selanjutnya.
+- ![alt text](https://img.shields.io/badge/DW-Done-green.svg "Done") Buat DataFrame yang merupakan akumulasi dari kolom 'Confirmed', 'Active', 'Deaths', 'Recovered', untuk setiap negara berdasarkan datetime.now()
 - ![alt text](https://img.shields.io/badge/DO-On_Going-orange.svg "On Going") Rapikan dokumentasi Jupyter dan juga GitHub
 - ![alt text](https://img.shields.io/badge/AN-On_Going-orange.svg "On Going") Buat analisa tentang data yang sudah dibersihkan
 - ![alt text](https://img.shields.io/badge/VZ-On_Going-orange.svg "On Going") Buat visualisasi tentang data yang sudah dibersihkan
 
 Secondary:
-- ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done by Ariandy") Backup dan maintaining Conda env.
-- ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done by Ariandy") Buat logging untuk setiap fungsi/proses yang cukup memakan waktu yang kurang lebihnya memerlukan 10 detik.
-- ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done by Ariandy") Buat unit test untuk beberapa fungsi yang kompleks (re.match() dan convert_a()).
+- ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done") Backup dan maintaining Conda env.
+- ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done") Buat logging untuk setiap fungsi/proses yang cukup memakan waktu yang kurang lebihnya memerlukan 10 detik.
+- ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done") Buat unit test untuk beberapa fungsi yang kompleks (re.match() dan convert_a()).
 
 Tertiary (semisal masih ada waktu):
 - Convert dataframe ke beberapa time series ('Confirmed', 'Active', 'Deaths', 'Recovered').
