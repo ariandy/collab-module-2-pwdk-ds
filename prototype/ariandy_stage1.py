@@ -29,6 +29,7 @@ def region_squeezer(df, combined, province_state, country_region):
         x = df[df[combined] == df.iloc[i,4]].mean()
         df.iloc[i,5] = x.values[0]
         df.iloc[i,6] = x.values[1]
+        print(str(i)+'/'+str(len(df)-1))
     df.Lat = df.lat_mean
     df.Long_ = df.long_mean
     df = column_extractor(df, 'lat_mean', 'long_mean', 'combined')
