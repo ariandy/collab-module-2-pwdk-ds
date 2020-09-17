@@ -22,9 +22,9 @@ Primary:
 Secondary:
 - ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done by Ariandy") Backup dan maintaining Conda env.
 - ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done by Ariandy") Buat logging untuk setiap fungsi/proses yang cukup memakan waktu yang kurang lebihnya memerlukan 10 detik.
+- ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done by Ariandy") Buat unit test untuk beberapa fungsi yang kompleks (re.match() dan convert_a()).
 
 Tertiary (semisal masih ada waktu):
-- Buat unit test untuk beberapa fungsi yang kompleks.
 - Convert dataframe ke beberapa time series ('Confirmed', 'Active', 'Deaths', 'Recovered').
 - Memproses [archive data](https://github.com/CSSEGISandData/COVID-19/tree/master/archived_data) agar menjadi sesuai dengan dashboard Johns-Hopkins.
 - Buat dashboard sederhana.
