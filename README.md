@@ -3,7 +3,7 @@
 ### Disclaimer
 
 Data source untuk project ini adalah hasil fetch dari [kumpulan csv pada link berikut](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports).
-Oleh karenanya, ada beberapa data yang terlihat anomali karena data dari [daily_reports_us](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports_us) tidak diikutsertakan. Ini sebabnya, ada beberapa angka (yang berhubungan dengan US) tidak sama (entah selisih sedikit, ataupun meleset jauh) dengan yang ada pada dashboard Johns-Hopkins.
+Oleh karenanya, ada beberapa data yang terlihat anomali karena data dari [daily_reports_us](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports_us) tidak diikutsertakan. Ini sebabnya, ada beberapa angka (yang berhubungan dengan US) tidak sama (entah selisih sedikit, ataupun meleset jauh) dengan yang ada pada dashboard [Johns-Hopkins](https://coronavirus.jhu.edu/map.html).
 
 ### Team
 - M. Ariandy Noviar untuk task Software Engineering (SE), Documentation (DOC), Data Preprocessing (DP), Software Development Engineer in Test (SDET), Data Visualization (VIZ)
