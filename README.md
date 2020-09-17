@@ -20,6 +20,7 @@ Primary:
 - ![alt text](https://img.shields.io/badge/VIZ-Done-green.svg "Done") Buat visualisasi tentang data yang sudah dibersihkan
 - ![alt text](https://img.shields.io/badge/DOC-Done-green.svg "Done") Rapikan dokumentasi GitHub
 - ![alt text](https://img.shields.io/badge/DASH-Done-green.svg "Done")Buat dashboard sederhana.
+
 Secondary:
 - ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done") Backup dan maintaining Conda env.
 - ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done") Buat logging untuk setiap fungsi/proses yang cukup memakan waktu yang kurang lebihnya memerlukan 10 detik.
