@@ -19,12 +19,12 @@ Primary:
 - ![alt text](https://img.shields.io/badge/AN-Done-green.svg "Done") Buat analisa tentang data yang sudah dibersihkan
 - ![alt text](https://img.shields.io/badge/VIZ-Done-green.svg "Done") Buat visualisasi tentang data yang sudah dibersihkan
 - ![alt text](https://img.shields.io/badge/DOC-Done-green.svg "Done") Rapikan dokumentasi GitHub
-- ![alt text](https://img.shields.io/badge/DASH-Done-green.svg "Done")Buat dashboard sederhana.
 
 Secondary:
 - ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done") Backup dan maintaining Conda env.
 - ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done") Buat logging untuk setiap fungsi/proses yang cukup memakan waktu yang kurang lebihnya memerlukan 10 detik.
 - ![alt text](https://img.shields.io/badge/SDET-Done-green.svg "Done") Buat unit test untuk beberapa fungsi yang kompleks (re.match() dan convert_a()).
+- ![alt text](https://img.shields.io/badge/DASH-Done-green.svg "Done")Buat dashboard sederhana.
 
 Tertiary (semisal masih ada waktu):
 - Convert dataframe ke beberapa time series ('Confirmed', 'Active', 'Deaths', 'Recovered').
