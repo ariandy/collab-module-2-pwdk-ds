@@ -6,7 +6,7 @@ Data source untuk project ini adalah hasil fetch dari [kumpulan csv pada link be
 Oleh karenanya, data yang difetch dimulai dari tanggal Feb-22 s/d Hari ini. Sementara data dari Jan-21 s/d Feb-14 yang tersedia pada [archive data](https://github.com/CSSEGISandData/COVID-19/tree/master/archived_data) tidak diikutsertakan. Ini sebabnya, ada beberapa angka yang tidak sama (entah selisih sedikit, ataupun meleset jauh) dengan yang ada pada dashboard Johns-Hopkins.
 
 ### Team
-- M. Ariandy Noviar untuk task Software Engineering (SE), Documentation (DO) dan Data Wrangling (DW)
+- M. Ariandy Noviar untuk task Software Engineering (SE), Documentation (DO), Data Wrangling (DW), Data Visualization (VZ)
 - Muhammad Firdaus Ramadhan untuk task Quality Assurance (QA), Analysis (AN), Data Visualization (VZ)
 
 ### Task
