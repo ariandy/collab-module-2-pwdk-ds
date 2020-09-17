@@ -18,7 +18,7 @@ Primary:
 - ![alt text](https://img.shields.io/badge/DOC-Done-green.svg "On Going") Rapikan dokumentasi Jupyter
 - ![alt text](https://img.shields.io/badge/AN-Done-green.svg "On Going") Buat analisa tentang data yang sudah dibersihkan
 - ![alt text](https://img.shields.io/badge/VIZ-Done-green.svg "Done") Buat visualisasi tentang data yang sudah dibersihkan
-- ![alt text](https://img.shields.io/badge/DOC-On_Going-orange.svg "On Going") Rapikan dokumentasi GitHub
+- ![alt text](https://img.shields.io/badge/DOC-Done-green.svg "On Going") Rapikan dokumentasi GitHub
 
 Secondary:
 - ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done") Backup dan maintaining Conda env.
@@ -31,3 +31,17 @@ Tertiary (semisal masih ada waktu):
 - Buat dashboard sederhana.
 - Membuat satu script utuh sebagai pipeline yang memproses semua data mentah menjadi sebuah dataframe yang cukup bersih untuk dianalisa.
 - Improve fungsi latlong_filler_all_mean() untuk beberapa negara tertentu.
+
+### .ipynb description
+- 'Stage-0.ipynb' dan 'Stage-1.ipynb' merupakan notebook yang berisi tentang step yang diperlukan untuk melakukan data cleaning.
+- 'Data Processing.ipynb' adalah notebook dimana data yang telah bersih diolah menjadi data yang digunakan untuk visualisasi. 
+- 'Analisa Covid.ipynb' berisi tetang analisa statistik yang didasarkan dari data yang telah diolah di 'Data Processing.ipynb'.
+- 'Data Visualization.ipynb', visualisasi yang dibuat berdasarkan dari data output 'Stage-1.ipynb' dan 'Data Processing.ipynb'.
+
+### Functions
+- ariandy_stage0.py, kumpulan fungsi yang digunakan untuk 'Stage-0.ipynb'
+- ariandy_stage1.py, kumpulan fungsi yang digunakan untuk 'Stage-1.ipynb'
+- data_processing.py, kumpulan fungsi yang digunakan untuk 'Data Processing.ipynb'
+
+### Unit Test
+- converter_test.py, test yang diperlukan untuk menguji segala kemungkinan yang ada pada pattern Regex (re.match()) dan juga sebagai mempermudah debugging juga scaling pada convert_a()
