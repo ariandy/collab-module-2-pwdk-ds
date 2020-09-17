@@ -6,7 +6,7 @@ Data source untuk project ini adalah hasil fetch dari [kumpulan csv pada link be
 Oleh karenanya, ada beberapa data yang terlihat anomali karena data dari [daily_reports_us](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports_us) tidak diikutsertakan. Ini sebabnya, ada beberapa angka (yang berhubungan dengan US) tidak sama (entah selisih sedikit, ataupun meleset jauh) dengan yang ada pada dashboard [Johns-Hopkins](https://coronavirus.jhu.edu/map.html).
 
 ### Team
-- M. Ariandy Noviar untuk task Software Engineering (SE), Documentation (DOC), Data Preprocessing (DP), Software Development Engineer in Test (SDET), Data Visualization (VIZ)
+- M. Ariandy Noviar untuk task Software Engineering (SE), Documentation (DOC), Data Preprocessing (DP), Software Development Engineer in Test (SDET), Data Visualization (VIZ), Dashboard (DASH)
 - Muhammad Firdaus Ramadhan untuk task Data Quality Assurance (DQA), Analysis (AN), Data Visualization (VIZ)
 
 ### Task
@@ -15,11 +15,11 @@ Primary:
 - ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done") Pecahkan beberapa prosedur yang kompleks (misal, data fetcher, regex matcher, dll) menjadi beberapa fungsi. Dan jadikan fungsi tersebut modular.
 - ![alt text](https://img.shields.io/badge/DQA-Done-green.svg "Done") Lakukan QA pada data. Pastikan data sudah cukup bersih untuk diproses ke tahapan selanjutnya.
 - ![alt text](https://img.shields.io/badge/DP-Done-green.svg "Done") Buat DataFrame yang merupakan akumulasi dari kolom 'Confirmed', 'Active', 'Deaths', 'Recovered', untuk setiap negara berdasarkan datetime.now()
-- ![alt text](https://img.shields.io/badge/DOC-Done-green.svg "On Going") Rapikan dokumentasi Jupyter
-- ![alt text](https://img.shields.io/badge/AN-Done-green.svg "On Going") Buat analisa tentang data yang sudah dibersihkan
+- ![alt text](https://img.shields.io/badge/DOC-Done-green.svg "Done") Rapikan dokumentasi Jupyter
+- ![alt text](https://img.shields.io/badge/AN-Done-green.svg "Done") Buat analisa tentang data yang sudah dibersihkan
 - ![alt text](https://img.shields.io/badge/VIZ-Done-green.svg "Done") Buat visualisasi tentang data yang sudah dibersihkan
-- ![alt text](https://img.shields.io/badge/DOC-Done-green.svg "On Going") Rapikan dokumentasi GitHub
-
+- ![alt text](https://img.shields.io/badge/DOC-Done-green.svg "Done") Rapikan dokumentasi GitHub
+- ![alt text](https://img.shields.io/badge/DASH-Done-green.svg "Done")Buat dashboard sederhana.
 Secondary:
 - ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done") Backup dan maintaining Conda env.
 - ![alt text](https://img.shields.io/badge/SE-Done-green.svg "Done") Buat logging untuk setiap fungsi/proses yang cukup memakan waktu yang kurang lebihnya memerlukan 10 detik.
@@ -28,9 +28,10 @@ Secondary:
 Tertiary (semisal masih ada waktu):
 - Convert dataframe ke beberapa time series ('Confirmed', 'Active', 'Deaths', 'Recovered').
 - Memproses [daily_reports_us](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports_us) agar menjadi sesuai dengan dashboard Johns-Hopkins.
-- Buat dashboard sederhana.
 - Membuat satu script utuh sebagai pipeline yang memproses semua data mentah menjadi sebuah dataframe yang cukup bersih untuk dianalisa.
 - Improve fungsi latlong_filler_all_mean() untuk beberapa negara tertentu.
+- Menambah beberapa informasi pada dashboard.
+- Improve tampilan dari dashboard (FrontEnd-side) dan juga routingnya (BackEnd-side).
 
 ### .ipynb description
 - 'Stage-0.ipynb' dan 'Stage-1.ipynb' merupakan notebook yang berisi tentang step yang diperlukan untuk melakukan data cleaning.
